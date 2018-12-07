@@ -1,12 +1,10 @@
 import re
 import os
 import argparse
-from os import system
 from subprocess import call
 from bs4 import BeautifulSoup
 from urllib.parse import unquote
-from urllib.request import urlretrieve as ur,unquote
-from urllib.request import build_opener,urlopen,urlretrieve
+from urllib.request import urlretrieve as ur,build_opener,urlopen
 
 def urlretrieve(url,filename):
     try:	
