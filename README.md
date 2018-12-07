@@ -11,18 +11,19 @@ PS:If you're using windows you may have to change a couple lines (56 and 64 as o
   
 **Help**
 ```
-python3 subdir.py --help
+>>> python3 subdir.py --help
+
+    usage: subdir.py [-h] [-p PATH] [-l LIMIT] [-z] [-v] url ext
+
+    positional arguments:
+      url                   URL to the subdir
+      ext                   file extensions to download
+
+    optional arguments:
+      -h, --help            show this help message and exit
+      -p PATH, --path PATH  Destination folder
+      -l LIMIT, --limit LIMIT
+                            Max number of files to download
+      -z, --zip             Save the output as a zipped file
+      -v, --verbose         To be or not to be
 ```
-usage: subdir.py [-h] [-p PATH] [-l LIMIT] [-z] [-v] url ext
-
-positional arguments:
-  url                   URL to the subdir
-  ext                   file extensions to download
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -p PATH, --path PATH  Destination folder
-  -l LIMIT, --limit LIMIT
-                        Max number of files to download
-  -z, --zip             Save the output as a zipped file
-  -v, --verbose         To be or not to be
