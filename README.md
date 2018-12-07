@@ -10,7 +10,9 @@ PS:If you're using windows you may have to change a couple lines (56 and 64 as o
 2. run python3 subdir.py <url> <extension>
   
 **Help**
->>> python3 subdir.py --help
+```
+python3 subdir.py --help
+```
 usage: subdir.py [-h] [-p PATH] [-l LIMIT] [-z] [-v] url ext
 
 positional arguments:
