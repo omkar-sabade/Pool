@@ -7,7 +7,7 @@ The way that this script does that is painfully slow and is not the optimal way.
 PS:If you're using windows you may have to change a couple lines (56 and 64 as of now)
 ## Usage
 1. Navigate to the sub directory on github copy the url of that page.
-2. run python3 subdir.py <url> <extension>
+2. run python3 subdir.py url extension
   
 **Help**
 ```
