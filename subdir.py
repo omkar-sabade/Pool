@@ -54,7 +54,6 @@ if len(files) == 0:
 dir_name = path + str(unquote(args.url.split('/')[-1]))
 ifprint("Saving to dir : " + dir_name)
 
-call(['rm','-rf',dir_name])
 if not os.path.exists(dir_name):
 	os.makedirs(dir_name)
 
