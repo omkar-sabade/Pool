@@ -7,6 +7,7 @@ from urllib.parse import unquote
 from urllib.request import urlretrieve as ur,build_opener,urlopen
 
 def urlretrieve(url,filename):
+    filename = unquote(filename)
     try:	
     	ur(url,filename)
     except Exception as e:
@@ -54,7 +55,8 @@ dir_name = path + str(unquote(args.url.split('/')[-1]))
 ifprint("Saving to dir : " + dir_name)
 
 call(['rm','-rf',dir_name])
-os.makedirs(dir_name)
+if not os.path.exists(dir_name):
+	os.makedirs(dir_name)
 
 for file in files[:args.limit]:
     urlretrieve(file.replace('blob','raw'),dir_name + '/' + file.split('/')[-1])
